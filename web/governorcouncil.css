@@ -1,0 +1,618 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: arial;
+}
+
+/*****responsive**/
+.container{
+       background-color:#BBCED9;
+    height:auto;
+      width:auto; 
+      overflow: hidden;
+}
+.header{
+     background-color:#197B7D;
+    height:150px;
+    width:auto;    
+        color:#DBF2F1;
+}
+@media only screen and (max-width:500px)
+{
+    .header{
+        height:170px;
+    }
+    
+}
+.header h1{
+    color:whitesmoke;
+    position:relative;
+    font-family:arial;
+    text-align: center;
+    margin-top:-100px;
+}
+.header h2{
+    margin-top:5px;
+    color:whitesmoke;
+    position:relative;
+    font-family:arial;
+    text-align: center;
+}
+.header p{
+    margin-top:10px;
+    text-align: center;
+    font-size:25px;
+    font-family:arial;
+    color:whitesmoke;
+}
+.logodiv{
+    background-color:red;
+    height:120px;
+    width:130px;
+    margin-left:60px;
+}
+.menudiv{
+      font-weight: bold;
+    background-color:#11684C;
+    height:50px;
+    margin-top:1px;
+    width:auto;
+    position: relative;
+}
+
+.menudiv ul{
+    
+    list-style-type:none;
+   margin-left:20px;
+    padding:0;
+    z-index:1;
+}
+.menudiv li{
+    padding:0;
+    display:inline-block;
+   text-align:center;
+   padding:18px;
+   cursor:pointer;
+   font-family:arial;
+   color:whitesmoke;
+  z-index:1;
+   outline:none;
+   overflow: hidden;
+  height:50px;
+  
+}
+.menudiv li a{
+    text-decoration:none;
+    color:whitesmoke;
+}
+.menudiv li:hover{
+       background-color:#18BA6C;
+    opacity:0.8;
+}
+.searchdiv{
+    background-color:red;
+    height:50px;
+    width:200px;
+   
+ float:right;
+ z-index: -1;
+ margin-right:112px;
+ margin-top:-54px;
+}
+.searchdiv input[type=text]
+{
+    border:none;
+    height:50px;
+    width:200px;
+  text-align:center;  
+    font-family:arial;
+    font-size:20px;
+}
+.searchicon{
+    background-color:yellow;
+    height:50px;
+    width:50px;
+    position:relative;
+    z-index: -1;
+    cursor:pointer;
+   float:right;
+  margin-top:-54px;
+  margin-right:60px;
+}
+@media only screen and (max-width:1330px)
+{
+    .menudiv{
+        height:470px;
+    }
+    
+    .menudiv li{
+        display:block;
+        border-bottom: solid 1px whitesmoke;
+       
+    }
+    .menudiv ul{
+        margin:0;
+    }
+    .searchdiv{
+        position: absolute;
+       margin-top:17px;
+       margin-left:50px;
+    }
+    .searchicon{
+        position:absolute;
+         margin-top:17px;
+       margin-left:252px;
+    }
+}
+/***hvoer content about us contect impact ect****/
+.abouthover{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:318px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+
+}
+.abouthover li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li:hover .abouthover{
+   
+    display:block;
+    
+}
+.abouthover li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+.menudiv li .abouthover a{
+    text-decoration: none;
+   color:black;
+}
+
+@media only screen and (max-width:730px)
+{
+    abouthover{
+         width:600px;
+    }
+    abouthover li{
+        height:600px;
+    }
+}
+/***dropdown 2 content about us contect impact ect****/
+.abouthover2{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:215px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+.abouthover2 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li:hover .abouthover2{
+    display:block; 
+  opacity: 1;
+}
+.menudiv li .abouthover2 a{
+    text-decoration: none;
+   color:black;
+}
+.abouthover2 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+.testing{
+    background-color:red;
+    height:200px;
+    width:300px;
+}
+/***dropdown 3 content about us contect impact ect****/
+.abouthover3{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:318px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+.abouthover3 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li:hover .abouthover3{
+    display:block;
+    z-index: 1;
+  
+}
+.menudiv li .abouthover3 a{
+    text-decoration: none;
+   color:black;
+}
+.abouthover3 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+/***dropdown 2 content about us contect impact ect****/
+.abouthover4{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:270px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+.abouthover4 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li .abouthover4 a{
+    text-decoration: none;
+   color:black;
+}
+.menudiv li:hover .abouthover4{
+    display:block; 
+  
+}
+.abouthover4 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+/***contact us***********************************************/
+.abouthover5{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:318px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+
+.abouthover5 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li .abouthover5 a{
+    text-decoration: none;
+   color:black;
+}
+.menudiv li:hover .abouthover5{
+    display:block; 
+  
+}
+.abouthover5 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+.menudiv li:hover .abouthover6{
+    display:block; 
+  
+}
+.menudiv li .abouthover6 a{
+    text-decoration: none;
+   color:black;
+}
+.abouthover6 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+
+/*****slider************************************************************/
+.sliderdiv{
+    background-color:transparent;
+    height:455px;
+    width:auto;
+    overflow: hidden;
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	 -webkit-animation: 12s slider infinite;
+}
+#slider figure img {
+	width:10%;
+        border-right: solid whitesmoke;
+        
+        height:480px;
+	float: left;
+   
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*******************Donationdiv****************************************************************/
+.donationdiv{
+    background-color:#11684C;
+    height:auto;
+    width:auto;    
+        margin-top:-18px;
+        cursor:pointer;
+        font-weight: bold;
+   
+         
+}
+.donationdiv a{
+    text-decoration:none;
+    color:#EAF1F0;;
+}
+.donationdiv ul{
+    list-style-type: none;
+    text-align: center;
+    padding:0;
+    
+}
+.donationdiv li{
+    background-color:transparent;
+  font-size:17px;
+    display:inline-block;
+    padding:15px;
+    
+}
+
+.donationdiv li:hover{
+    background-color:#18BA6C;
+    transition: 0.5s;
+}
+.donationdiv a li :hover{
+    width:auto;
+    transition: 0.5s;    
+}
+.donationdiv li a:hover{
+       color:black;
+       transition:0.5s;
+    }
+@media only screen and (max-width:1330px){
+    .donationdiv{
+        height:396px;
+        text-align: center;
+    }
+    .donationdiv ul{
+        margin:0;
+        padding:0
+    }
+    .donationdiv li{
+        border-bottom: 1px solid whitesmoke;
+        display: block;
+        transition:0.2s;
+    }
+    
+    
+}
+/**********************governing************************/
+.governintdiv{
+   background-color:#11684C;
+    height:50px;
+    width:900px;
+    padding: 15px;
+    color:whitesmoke;
+    border-radius: 5px;
+    margin:auto;
+    margin-top:20px;
+}
+.governingcont{
+    background-color:transparent;
+     font-size:20px;
+      color:#434444;
+     height:auto;
+    width:900px;
+    margin:auto;
+   margin-top:4px;
+}
+.governingcont table{
+  padding:0;
+    width:900px;
+    outline: none;
+    border:solid;
+   
+}
+@media only screen and (max-width:1300px)
+{
+    .governintdiv{
+        width:auto;
+    }
+    .governingcont{
+        width:auto;
+    }
+    .governingcont table{
+        width:100%;
+    }
+}
+/*****************************************fooder**************************************/
+.fooder{
+    background-color:#197B7D;
+    height:230px;
+    width:auto;
+    margin-top: 30px;
+    padding:30px;  
+}
+.fooder img{
+    border-radius: 50px;
+    height:40px;
+    width:40px;
+    cursor: pointer;
+}
+@media only screen and (max-width:1320px)
+{
+    .fooder{
+        height:400px;
+ 
+    }
+}
+@media only screen and (max-width:1000px)
+{
+    .fooder{
+        height:650px;
+     
+    }
+}
+@media only screen and (max-width:720px)
+{
+    .fooder{
+        height:750px;
+    }
+}
+@media only screen and (max-width:620px)
+{
+    .fooder{
+        height:1000px;
+    }
+}
+@media only screen and (max-width:420px)
+{
+    .fooder{
+        height:1000px;
+    }
+}/***********                 fooderinfo                                                      ************/
+.fooderinfoheader{ 
+    background-color:transparent;
+    height:auto;
+    text-align: center;
+    padding:10px;
+    width:auto;
+    float:right;
+    color:whitesmoke;
+    margin-right: 500px;
+    margin-top:-30px;
+}
+.fooderinfo1{
+    background-color:transparent;
+    height:auto;
+    padding:10px;
+    line-height: 1.5;
+    width:auto;
+    float:left;
+    color:whitesmoke;
+    margin-left: 140px;
+    margin-top:20px;
+}
+.fooderinfo2{
+    background-color:transparent;
+    height:auto;
+    padding:10px;
+    line-height: 1.5;
+    width:auto;
+    float:left;
+    color:whitesmoke;
+    margin-left: 52px;
+
+}
+.fooderinfo3{
+    background-color:transparent;
+    height:auto;
+    padding:10px;
+    line-height: 1.5;
+    width:auto;
+    float:left;
+    color:whitesmoke;
+    margin-left: 52px;
+
+}
+.setimg{
+    text-align: center;
+    padding:5px;
+    background-color:transparent;
+    height:180px;
+    width:60px;
+    float:right;
+}
+
+

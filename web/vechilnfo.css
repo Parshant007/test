@@ -1,0 +1,399 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color:#BBCED9;
+    height:2000px;
+      width:auto;  
+ overflow: hidden;
+}
+.head{
+    background-color:#197B7D;
+    height:150px;
+    width:auto;
+      color:#DBF2F1;
+    text-align: center;
+    font-size:20px;
+      padding:40px;
+}
+.header{
+    background-color:#197B7D;
+    height:150px;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+    width:auto;    
+        color:#DBF2F1;
+}
+@media only screen and (max-width:500px)
+{
+    .header{
+        height:170px;
+    }
+    
+}
+.header h1{
+    color:whitesmoke;
+    position:relative;
+    font-family:arial;
+    text-align: center;
+    margin-top:-100px;
+}
+.header h2{
+    margin-top:5px;
+    color:whitesmoke;
+    position:relative;
+    font-family:arial;
+    text-align: center;
+}
+.header p{
+    margin-top:10px;
+    text-align: center;
+    font-size:25px;
+    font-family:arial;
+    color:whitesmoke;
+}
+.logodiv{
+    background-color:transparent;
+    height:120px;
+    width:130px;
+    margin-left:60px;
+}
+.menudiv{
+  font-weight: bold;
+    background-color:#11684C;
+    height:50px;
+    width:auto;
+    position: relative;
+}
+
+.menudiv ul{
+    
+    list-style-type:none;
+   margin-left:20px;
+    padding:0;
+    z-index:1;
+}
+.menudiv li{
+    padding:0;
+    display:inline-block;
+   text-align:center;
+   padding:18px;
+   cursor:pointer;
+   font-family:arial;
+   color:whitesmoke;
+  z-index:1;
+   outline:none;
+   overflow: hidden;
+  height:50px;
+  
+}
+.menudiv li a{
+    text-decoration:none;
+    color:whitesmoke;
+}
+.menudiv li:hover{
+    background-color:#18BA6C;
+    opacity:0.8;
+}
+.searchdiv{
+    background-color:red;
+    height:50px;
+    width:200px;
+   
+ float:right;
+ z-index: -1;
+ margin-right:112px;
+ margin-top:-54px;
+}
+.searchdiv input[type=text]
+{
+    border:none;
+    height:50px;
+    width:200px;
+  text-align:center;  
+    font-family:arial;
+    font-size:20px;
+}
+.searchicon{
+    background-color:yellow;
+    height:50px;
+    width:50px;
+    position:relative;
+    z-index: -1;
+    cursor:pointer;
+   float:right;
+  margin-top:-54px;
+  margin-right:60px;
+}
+@media only screen and (max-width:1330px)
+{
+    .menudiv{
+        height:470px;
+    }
+    
+    .menudiv li{
+        display:block;
+        border-bottom: solid 1px whitesmoke;
+       
+    }
+    .menudiv ul{
+        margin:0;
+    }
+    .searchdiv{
+        position: absolute;
+       margin-top:17px;
+       margin-left:50px;
+    }
+    .searchicon{
+        position:absolute;
+         margin-top:17px;
+       margin-left:252px;
+    }
+}
+/***hvoer content about us contect impact ect****/
+.abouthover{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:318px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+
+}
+.abouthover li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li:hover .abouthover{
+   
+    display:block;
+    
+}
+.abouthover li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+.menudiv li .abouthover a{
+    text-decoration: none;
+   color:black;
+}
+
+@media only screen and (max-width:730px)
+{
+    abouthover{
+         width:600px;
+    }
+    abouthover li{
+        height:600px;
+    }
+}
+/***dropdown 2 content about us contect impact ect****/
+.abouthover2{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:115px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+.abouthover2 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li:hover .abouthover2{
+    display:block; 
+  opacity: 1;
+}
+.menudiv li .abouthover2 a{
+    text-decoration: none;
+   color:black;
+}
+.abouthover2 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+.testing{
+    background-color:red;
+    height:200px;
+    width:300px;
+}
+/***dropdown 3 content about us contect impact ect****/
+.abouthover3{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:115px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+.abouthover3 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li:hover .abouthover3{
+    display:block;
+    z-index: 1;
+  
+}
+.menudiv li .abouthover3 a{
+    text-decoration: none;
+   color:black;
+}
+.abouthover3 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+/***dropdown 2 content about us contect impact ect****/
+.abouthover4{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:110px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+.abouthover4 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li .abouthover4 a{
+    text-decoration: none;
+   color:black;
+}
+.menudiv li:hover .abouthover4{
+    display:block; 
+  
+}
+.abouthover4 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+/***contact us***********************************************/
+.abouthover5{
+  display:none;
+    position:absolute;
+  padding:0;
+  margin:0;
+  float:left;
+    background-color:#8CCBE4;
+    height:318px;
+    width:300px;
+margin-top:14px;
+ z-index: 1;
+}
+
+.abouthover5 li{
+    list-style-type:none;
+border:none; 
+margin-top:0;
+color:white;
+    border-top: 1px solid;
+ z-index:1;
+    width:300px;
+}
+.menudiv li .abouthover5 a{
+    text-decoration: none;
+   color:black;
+}
+.menudiv li:hover .abouthover5{
+    display:block; 
+  
+}
+.abouthover5 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+.menudiv li:hover .abouthover6{
+    display:block; 
+  
+}
+.menudiv li .abouthover6 a{
+    text-decoration: none;
+   color:black;
+}
+.abouthover6 li:hover{
+  
+    background-color:transparent;
+    color:black;
+    border:none;
+}
+/*********************vechileinfo***********************/
+.vechileinfo{
+    background-color:#197B7D;
+    height:200px;
+    width:240px;
+    border-radius: 5px;
+   float:left;
+   font-family: arial;
+   font-size:18px;
+   padding:20px;
+   margin-left:10px;
+    margin-top:20px;
+}
+
+.vechileinfo input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.viewinfo{
+    background-color:red;
+    height:200px;
+    width:300px; 
+    float:left;
+    margin-left:50px;
+    margin-top:20px;
+}
